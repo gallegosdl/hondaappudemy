@@ -1,0 +1,75 @@
+<template>
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+    <!--  If necessary, please modify the charset parameter to specify the        -->
+    <!--  character set of your HTML page.                                        -->
+    <!--  ----------------------------------------------------------------------  -->
+
+
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+        <input type=hidden name="oid" value="00D6A000002GpV5">
+        <input type=hidden name="retURL" value="https://main--timely-nasturtium-fa2a34.netlify.app/">
+
+        <div class="slds-form-element">
+            <label class="slds-form-element__label" for="first_name">First Name</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="first_name" maxlength="40" name="first_name" size="20" class="slds-input" required />
+            </div>
+        </div>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label" for="last_name">Last Name</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="last_name" maxlength="40" name="last_name" size="20" class="slds-input" required/>
+            </div>
+        </div>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label" for="email">Email</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="email" maxlength="40" name="email" size="20" class="slds-input" required/>
+            </div>
+        </div>
+        <div class="slds-form-element slds-hide">
+            <label class="slds-form-element__label" for="company">Company</label>
+            <div class="slds-form-element__control">
+                <input type="text" id="company" maxlength="40" name="company" size="20" class="slds-input" value="Honda LWC" required/>
+            </div>
+        </div>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label" for="city">City</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="city" maxlength="40" name="city" size="20" class="slds-input" required />
+            </div>
+        </div>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label" for="state">State</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="state" maxlength="40" name="state" size="20" class="slds-input" required/>
+            </div>
+        </div>
+        <div class="slds-form-element slds-hide">
+            <label class="slds-form-element__label" for="description">Description</label>
+            <div class="slds-form-element__control">
+              <textarea name="description" id="description" class="slds-textarea" required>{description}</textarea>
+            </div>
+        </div>
+
+
+        <!--  ----------------------------------------------------------------------  -->
+        <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+        <!--  these lines if you wish to test in debug mode.                          -->
+        <!--  <input type="hidden" name="debug" value=1>                              -->
+        <!--  <input type="hidden" name="debugEmail"                                  -->
+        <!--  value="gallegosdl1975@gmail.com">                                       -->
+        <!--  ----------------------------------------------------------------------  -->
+
+        <input type="submit" name="submit" class="slds-hide">
+
+    </form>
+
+</template>

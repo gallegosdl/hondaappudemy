@@ -56,6 +56,7 @@ export default class BuildAndPrice extends LightningElement {
     selectedImageName = this.colorsList[0].value
     selectedColorName = this.colorsList[0].label
     animatedPriceValue
+    //description = this.selectedVariant
 
     // on page load
     connectedCallback(){
@@ -107,8 +108,13 @@ export default class BuildAndPrice extends LightningElement {
     cancelHandler(){
       this.showModal = false
     }
-    submitHander(){
+    submitHandler(){
       console.log("Form Submitted!!")
+      this.template.querySelector('components-lead-form').formSubmit()
+    }
+
+    get description(){
+      return`Customer is interested in the following vehicle ${this.selectedVariant.variant} in ${this.selectedColorName} at the build price of ${this.selectedVariant.formattedPrice}`
     }
 
     //method to animate the price
